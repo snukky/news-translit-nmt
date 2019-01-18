@@ -2,8 +2,8 @@
 
 This repository contains training scripts and instructions how to reproduce our systems submitted to
 the NEWS 2018 Shared Task on Transliteration of Named Entities, and described in R. Grundkiewicz, K.
-Heafield: [_Neural Machine Translation Techniques for Named Entity Transliteration_](Neural Machine
-Translation Techniques for Named Entity Transliteration), NEWS 2018, ACL 2018
+Heafield: [_Neural Machine Translation Techniques for Named Entity
+Transliteration_](http://www.aclweb.org/anthology/W18-2413), NEWS 2018, ACL 2018
 
 Citation:
 
