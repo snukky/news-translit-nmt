@@ -1,0 +1,10 @@
+*~
+*.swo
+*.swp
+*.pyc
+
+datasets/*.zip
+datasets/NEWS2018_DATASET_??
+
+tools/__pycache__
+tools/marian-dev
