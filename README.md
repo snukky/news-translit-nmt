@@ -40,17 +40,17 @@ Citation:
 3. Prepare training and development data:
 
         cd experiments
-        bash prepare-data.sh
+        ./prepare-data.sh
 
 4. Train baseline systems specifying GPU device(s) and one or more language directions, e.g.:
 
-        bash train.sh '0 1' EnVi EnCh ChEn
+        ./train.sh '0 1' EnVi EnCh ChEn
 
     Each system will be an ensemble of 4 deep RNN models rescored by 2 right-left models.
 
     The evaluation scores can be collected by running:
 
-        bash show-results.sh
+        ./show-results.sh
 
 5. A text file can be translated using the `translate.sh` script, for example:
 
@@ -58,7 +58,7 @@ Citation:
 
 6. Prepare synthetic data with the back-translation or forward-translation method:
 
-        bash prepare-synthetic-data.sh
+        ./prepare-synthetic-data.sh
 
    The systems can be re-trained with additional data by replacing original folders and re-running
    the training script, e.g.:
@@ -66,8 +66,8 @@ Citation:
         mv data data.original
         mv synthetic data
         mv models models.baseline
-        bash train.sh '0 1' EnVi EnCh ChEn
-        bash show-results.sh
+        ./train.sh '0 1' EnVi EnCh ChEn
+        ./show-results.sh
 
     For the EnVi system, this should display results similar to the following:
 

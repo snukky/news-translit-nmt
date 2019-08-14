@@ -1,5 +1,7 @@
 #!/bin/bash -v
 
+set -eo pipefail
+
 dataset_dev=../datasets/NEWS2018_DATASET_0?/*_dev.xml
 dataset_train=../datasets/NEWS2018_DATASET_0?/*_trn.xml
 
