@@ -14,13 +14,13 @@ def main():
 
         if args.maxlen and len(src.split()) > args.maxlen:
             if not args.quiet:
-                sys.stdout.write(line)
+                sys.stderr.write(line)
             continue
 
         if src not in data:
             sys.stdout.write(line)
         elif not args.quiet:
-            sys.stdout.write(line)
+            sys.stderr.write(line)
 
 
 def parse_args():
